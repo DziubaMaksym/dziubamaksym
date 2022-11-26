@@ -1,0 +1,139 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Dziuba Maksym
+title: Senior DevOps
+email: dziubamaksym@pm.me
+website: dziubamaksym.github.io/dziubamaksym
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+github_username: dziubamaksym
+mastadon_username: <a rel="me" href="https://hachyderm.io/@delicta">Mastodon</a>
+# stackoverflow_username: V
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+#instagram_username: jameswgrant
+#linkedin_username: jameswgrant
+# xing_username: jekyll
+# pinterest_username: jekyll
+#youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+additional_links:
+  - title: Mastodon
+    icon: fas fa-globe
+    url: https://hachyderm.io/@delicta
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.png
+about_content: | # this will include new lines to allow paragraphs
+  Hi, my name's Maksym, and I'm a senior DevOps. 
+  As well as administrating systems, I also have experience making production clusters using Nomad, Consul, Boundary, and Vault. 
+  I have worked at several companies gaining teamwork and leadership skills.
+  The Tech stack that I used and have production experience with is:
+   - HashiStack:
+     - Nomad
+     - Consul
+     - Vault
+     - Boundary
+     - HCP (HashiCorp Cloud Platform)
+   - ELK
+   - Prometheus
+   - Grafana
+   - GitLab CI/CD
+   - GCP 
+
+  I am most skilled in: <mark>HashiStack</mark> and <mark>Eating Pizza :)</mark>
+
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Multi-regional Nomad cluster
+        quote: >
+          This is one of the most significant projects I have done so far.
+        description: | # this will include new lines to allow paragraphs
+          I started this project to learn <mark>Nomad</mark>, which has since grown into a fully-fledged cluster. 
+          I have learned many skills through this, and I'm proud to have this in my portfolio. 
+          If you don't have a project as excellent as this, I suggest you make one.
+          So in these project, I have 8 on-prem DC and 1 in GCP, each with its own Nomad & Consul clusters.
+          The cluster in GCP has VPN connections to on-premise clusters. It is used to deploy new clusters, deploy 
+          monitoring on GCP, and act as the source of truth for ACL tokens & policies.
+          Every aspect of Nomad, Consul, Vault, business jobs, as well as monitoring are described in terraform code and 
+          deployed in production via GitLab CI/CD Pipelines.
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Pinesoftware
+        link: pinesoftware.com.cy
+        sub_title: Senior DevOps
+        caption: October 2020 - Present
+        quote: >
+          Solving 21st-century problems by designing scalable and reliable infrastructure
+        description: | # this will include new lines to allow paragraphs
+          Company profile in fintech, so I work with low-latency and high-load projects. 
+          I'm involved in every aspect of the project, from writing Dockerfile in the most optimized way to designing cluster architecture. 
+          When I came in, they had servers managed by hand, and every internal app was running in SystemD service. 
+          Now every internal app has a CI pipeline that ensures code quality and builds Docker images. And CD pipeline that uses an internal registry to deploy services in Nomad. After deployment and healthchecks, service registers in Consul and our Prometheus start a monitoring process of these services.
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: MegaMarket
+        sub_title: Senior DevOps
+        caption: October 2012 - 2020
+        quote: >
+          Optimization, Virtualization, Security
+        description: | # this will include new lines to allow paragraphs
+          I came to the company when they had 2 servers and big troubles with the reliability of internal apps. But by 
+          implementing virtualization and building a set of virtual machines on top of ESXi plus vCenter, I created a 
+          reliable environment for production. 
+          In the short term, infrastructure grew to 7 physical servers with over 50 virtual machines. 
+          I worked with almost everything from Windows XP to building multi-master MariaDB clusters, 
+          from internal mail servers to writing python apps that used UniFi controller to detect anomalies and movement 
+          of devices inside WiFi network.
+
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Alongside my interests in DevOps engineering some of my other interests and hobbies are:
+      - Cooking
+      - Readyng
+      - Cybersecurity
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag
