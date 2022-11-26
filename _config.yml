@@ -62,6 +62,12 @@ about_content: | # this will include new lines to allow paragraphs
    - Grafana
    - GitLab CI/CD
    - GCP 
+  My Certificates
+    - [English Upper-intermediate(certs/YappiCorporate_Certificate_Maksym_Dzuba_Upper-intermediate.pdf)
+    - [CompTIA](certs/CompTIA_Security_Certification_Prep.pdf)
+    - [Kali Linux](certs/Kali_Linux_Deep_Dive_crt.pdf)
+    - [Nomad](certs/Nomad.pdf)
+    - [Vault](certs/Vault.pdf)
 
   I am most skilled in: <mark>HashiStack</mark> and <mark>Eating Pizza :)</mark>
 
@@ -121,7 +127,7 @@ content:
     content: | # this will include new lines to allow paragraphs
       Alongside my interests in DevOps engineering some of my other interests and hobbies are:
       - Cooking
-      - Readyng
+      - Reading
       - Cybersecurity
 
 # Footer
@@ -137,3 +143,16 @@ sass:
 
 plugins:
   - jekyll-seo-tag
+exclude:
+  [
+    "Gemfile",
+    "Gemfile.lock",
+    "node_modules",
+    "vendor/bundle/",
+    "vendor/cache/",
+    "vendor/gems/",
+    "vendor/ruby/",
+    "lib/",
+    "scripts/",
+    "docker-compose.yml",
+  ]
