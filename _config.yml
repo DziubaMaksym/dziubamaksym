@@ -61,9 +61,11 @@ about_content: | # this will include new lines to allow paragraphs
    - Prometheus
    - Grafana
    - GitLab CI/CD
-   - GCP 
+   - GCP
+
   My Certificates
-    - [English Upper-intermediate(certs/YappiCorporate_Certificate_Maksym_Dzuba_Upper-intermediate.pdf)
+
+    - [English Upper-intermediate](certs/YappiCorporate_Certificate_Maksym_Dzuba_Upper-intermediate.pdf)
     - [CompTIA](certs/CompTIA_Security_Certification_Prep.pdf)
     - [Kali Linux](certs/Kali_Linux_Deep_Dive_crt.pdf)
     - [Nomad](certs/Nomad.pdf)
